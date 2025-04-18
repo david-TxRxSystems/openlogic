@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>OpenLogic — The Open Smart Home OS</title>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap">
   <style>
@@ -16,7 +16,7 @@
     header {
       position: relative;
       width: 100%;
-      height: 550px;
+      height: 400px;
       background: url('assets/openlogic_hero_banner.png') no-repeat center center;
       background-size: cover;
       display: flex;
@@ -29,6 +29,23 @@
     header img {
       max-width: 100px;
       margin-bottom: 1rem;
+    }
+    .social-icons {
+      display: flex;
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+    .social-icons a {
+      background: #1e1e1e;
+      border: 1px solid #333;
+      border-radius: 50%;
+      width: 40px;
+      height: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+      color: white;
     }
     main {
       max-width: 800px;
@@ -57,25 +74,33 @@
       font-size: 0.875rem;
       color: #888;
     }
-    a.button {
-      text-align:center;
-      margin-top: 1rem;
-      padding: 0.75rem 1.5rem;
-      background: #1a73e8;
-      color: white;
-      border-radius: 5px;
-      text-decoration: none;
-    }
   </style>
 </head>
 <body>
   <header>
-      
-  </header>
-  <main>
-    <a class="button" href="https://github.com/david-TxRxSystems/openlogic">View on GitHub</a>
+    <img src="assets/OpenLogic_LogoMark.png" alt="OpenLogic logo">
     <h1>OpenLogic</h1>
     <p>The Open Smart Home Operating System</p>
+    <div class="social-icons">
+      <a href="https://github.com/david-TxRxSystems/openlogic" title="GitHub" aria-label="GitHub">
+        <svg fill="currentColor" viewBox="0 0 24 24" width="20" height="20" xmlns="http://www.w3.org/2000/svg">
+          <path d="M12 .297a12 12 0 00-3.794 23.4c.6.113.82-.263.82-.582 0-.287-.01-1.046-.016-2.053-3.338.726-4.042-1.61-4.042-1.61-.547-1.39-1.335-1.758-1.335-1.758-1.09-.744.082-.729.082-.729 1.205.085 1.84 1.236 1.84 1.236 1.07 1.834 2.807 1.304 3.49.997.108-.776.42-1.305.76-1.604-2.665-.304-5.467-1.334-5.467-5.932 0-1.31.467-2.382 1.235-3.22-.123-.303-.536-1.523.117-3.176 0 0 1.008-.322 3.3 1.23a11.5 11.5 0 016 0c2.29-1.552 3.295-1.23 3.295-1.23.655 1.653.242 2.873.12 3.176.77.838 1.233 1.91 1.233 3.22 0 4.61-2.807 5.625-5.48 5.922.432.372.816 1.102.816 2.222 0 1.606-.015 2.9-.015 3.293 0 .322.216.698.825.58A12.001 12.001 0 0012 .297z"/>
+        </svg>
+      </a>
+      <a href="https://mastodon.social/@txrx" title="Mastodon" aria-label="Mastodon">
+        <svg fill="currentColor" viewBox="0 0 24 24" width="20" height="20" xmlns="http://www.w3.org/2000/svg">
+          <path d="M21.43 10.77c0-5.88-3.9-7.6-7.65-7.6h-3.6c-3.75 0-7.65 1.72-7.65 7.6 0 1.33.03 2.6.09 3.77.27 5.28 3.95 6.13 7.56 6.13.6 0 1.17-.04 1.68-.13.59-.1.75-.43.75-.77v-2.13h-1.53c-3.93 0-4.66-1.5-4.91-2.36-.1-.34-.36-1.23-.6-2.05a.94.94 0 01.89-1.21h1.28a.91.91 0 01.89.66c.21.74.4 1.4.55 1.74.27.6.82 1.25 2.02 1.25h1.25c.54 0 .98-.43.98-.97V9.7c0-.52-.43-.96-.96-.96h-2.98a.96.96 0 01-.96-.96V5.9c0-.53.44-.96.96-.96h5.5c.53 0 .96.43.96.96v5.66c0 .54.43.97.96.97h.63c.53 0 .96-.43.96-.97v-.8z"/>
+        </svg>
+      </a>
+      <a href="https://discord.gg/openlogic" title="Discord" aria-label="Discord">
+        <svg fill="currentColor" viewBox="0 0 24 24" width="20" height="20" xmlns="http://www.w3.org/2000/svg">
+          <path d="M20.317 4.369a19.791 19.791 0 00-4.885-1.515.074.074 0 00-.079.037c-.211.375-.444.864-.608 1.249a18.224 18.224 0 00-5.487 0 12.95 12.95 0 00-.617-1.25.077.077 0 00-.079-.037 19.736 19.736 0 00-4.885 1.516.07.07 0 00-.032.027C2.04 9.045 1.282 13.58 1.568 18.057a.082.082 0 00.03.058 19.911 19.911 0 005.993 3.05.077.077 0 00.084-.027c.46-.63.873-1.295 1.226-1.994a.076.076 0 00-.041-.106 13.097 13.097 0 01-1.872-.893.078.078 0 01-.008-.13c.126-.095.253-.195.373-.291a.077.077 0 01.079-.01c3.927 1.793 8.18 1.793 12.061 0a.076.076 0 01.08.009c.12.096.246.196.373.292a.078.078 0 01-.006.13 12.612 12.612 0 01-1.873.892.076.076 0 00-.04.107c.36.699.773 1.364 1.225 1.993a.076.076 0 00.084.028 19.888 19.888 0 005.994-3.05.076.076 0 00.03-.058c.5-7.014-1.133-11.497-2.63-13.662a.062.062 0 00-.03-.028zM8.02 15.331c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.418 2.157-2.418 1.21 0 2.176 1.094 2.157 2.418 0 1.334-.955 2.419-2.157 2.419zm7.974 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.418 2.157-2.418 1.21 0 2.176 1.094 2.157 2.418 0 1.334-.947 2.419-2.157 2.419z"/>
+        </svg>
+      </a>
+    </div>
+  </header>
+
+  <main>
     <p><strong>OpenLogic</strong> is a professional-grade, open-source smart home OS designed to replace platforms like Crestron. Built for integrators and developers, it offers a modern DSL, modular logic engine, and open ecosystem integration.</p>
 
     <div class="features">
@@ -97,6 +122,7 @@
       </div>
     </div>
   </main>
+
   <footer>
     &copy; 2024 TxRxSystems · <a href="https://mastodon.social/@txrx">@txrxsystems</a> · OpenLogic.dev
   </footer>
