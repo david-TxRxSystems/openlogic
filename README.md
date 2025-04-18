@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://raw.githubusercontent.com/david-TxRxSystems/openlogic/main/assets/OpenLogic_LogoMark.png" width="120" alt="OpenLogic logo" />
+  <img src="00_Project%20Vision/assets/OpenLogic_LogoMark.png" width="120" alt="OpenLogic logo" />
 </p>
 
 # OpenLogic
