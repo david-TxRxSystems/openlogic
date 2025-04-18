@@ -42,7 +42,7 @@
 ## 📌 Get Involved
 
 OpenLogic is being developed in the open. Follow the journey:
-- Mastodon: [@txrxsystems@mastodon.social](https://mastodon.social/@txrxsystems)
+- Mastodon: [@txrx@mastodon.social](https://mastodon.social/@txrx)
 - Weekly posts, progress updates, and architecture discussions
 
 If you're a developer, integrator, or open source contributor — [reach out or open a PR](https://github.com/YOUR_GITHUB_USERNAME/openlogic)!
