@@ -1,0 +1,10 @@
+{
+  "Area": 1,
+  "Buttons": 4,
+  "RampDir": [
+    "up",
+    "down",
+    "up",
+    "down"
+  ]
+}
