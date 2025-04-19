@@ -1,101 +1,36 @@
-# OpenLogic DSL — Generic Room (Updated Syntax)
+# 📘 DSL Syntax Overview
 
-This version uses grouped signal blocks, inspired by Crestron's SIMPL+ format, for cleaner and more efficient declarations.
+OpenLogic uses a clean, declarative syntax inspired by SIMPL+, designed for structured signal-based logic programming.
 
-## 📡 Signal Declarations
-
-```dsl
-input digital
-  PowerOff,
-  VolUp,
-  VolDn,
-  Mute,
-  Source[36];
-
-output digital
-  MuteFB;
-
-output analog
-  VolumeLevel,
-  SelectedSource;
-
-output string
-  To_UI$;
-```
-
-## 🧠 Internal Variables
+## 🧮 Signal Types
 
 ```dsl
-var analog CurrentVol     = 40
-var digital MuteFlag      = false
-var analog SourceIndex    = 0
+DIGITAL_INPUT
+PowerOn,
+MuteToggle;
+
+ANALOG_INPUT
+VolumeLevel;
+
+DIGITAL_OUTPUT
+SystemOn,
+MuteFB;
+
+ANALOG_OUTPUT
+VolumeFB;
 ```
 
-## ⚙️ Event Blocks (WHEN)
+## ⚙️ Parameters
 
 ```dsl
-when VolUp do
-    if CurrentVol < 100 then
-        set CurrentVol = CurrentVol + 1
-        emit VolumeLevel => CurrentVol
-        emit To_UI$ => "VOL=" + CurrentVol
-    end
-end
-
-when VolDn do
-    if CurrentVol > 0 then
-        set CurrentVol = CurrentVol - 1
-        emit VolumeLevel => CurrentVol
-        emit To_UI$ => "VOL=" + CurrentVol
-    end
-end
-
-when Mute do
-    toggle MuteFlag
-    emit MuteFB => MuteFlag
-    emit To_UI$ => "MUTE=" + (MuteFlag ? "ON" : "OFF")
-end
-
-when PowerOff do
-    set CurrentVol = 0
-    emit VolumeLevel => 0
-    emit To_UI$ => "PWR=OFF"
-end
+param DeviceID = 42
+param FadeTime = 2.0
 ```
 
-## 🎛️ Source Selection Logic
+## 🧠 Modifiers
 
-```dsl
-when Source[i] do
-    set SourceIndex = i
-    emit SelectedSource => i
-    emit To_UI$ => "SRC=" + i
-end
-```
+- `pulse` — pulse output signal once
+- `wait` — pause logic execution for duration
+- `emit` — send value
+- `on rising(...)`, `on falling(...)`, `on change(...)` — event triggers
 
-## 🧱 Module Definition
-
-```dsl
-module GenericRoom {
-    input digital
-      PowerOff,
-      VolUp,
-      VolDn,
-      Mute,
-      Source[36];
-
-    output digital
-      MuteFB;
-
-    output analog
-      VolumeLevel,
-      SelectedSource;
-
-    output string
-      To_UI$;
-}
-```
-
----
-
-> ✅ Next: Confirm you're happy with this block-style signal model, then we can expand into things like `ROUTE`, `ON RISING`, or macros.
