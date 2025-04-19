@@ -3,59 +3,93 @@
 <head>
   <meta charset="UTF-8" />
   <title>OpenLogic – Vision</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <style>
-  body {
-    font-family: 'Inter', sans-serif;
-    background-color: #121212;
-    color: #e0e0e0;
-    margin: 0;
-    padding: 0;
-  }
-  nav {
-    background: #1e1e1e;
-    padding: 1rem;
-    display: flex;
-    justify-content: center;
-    gap: 2rem;
-  }
-  nav a {
-    color: #e0e0e0;
-    text-decoration: none;
-    font-weight: bold;
-  }
-  nav a:hover {
-    text-decoration: underline;
-  }
-  main {
-    max-width: 800px;
-    margin: 2rem auto;
-    padding: 0 1rem;
-  }
-  h1 {
-    font-size: 2rem;
-    border-bottom: 1px solid #333;
-    padding-bottom: 0.5rem;
-  }
-</style>
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #121212;
+      color: #e0e0e0;
+      margin: 0;
+      padding: 0;
+    }
+    nav {
+      background: #1e1e1e;
+      padding: 1rem;
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+    }
+    nav a {
+      color: #e0e0e0;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    header {
+      width: 100%;
+      height: auto;
+      background-color: #121212;
+      text-align: center;
+    }
+    header img {
+      width: 800px;
+      height: 100px;
+      object-fit: cover;
+    }
+    main {
+      max-width: 800px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+    h1 {
+      font-size: 2rem;
+      border-bottom: 1px solid #333;
+      padding-bottom: 0.5rem;
+    }
+    section {
+      margin-bottom: 2rem;
+    }
+    section h2 {
+      font-size: 1.5rem;
+      color: #ffffff;
+      margin-bottom: 0.5rem;
+    }
+  </style>
 </head>
 <body>
-  
-<nav>
-  <a href="index.html">Home</a>
-  <a href="vision.html">Vision</a>
-  <a href="features.html">Features</a>
-  <a href="https://github.com/david-TxRxSystems/openlogic" target="_blank">GitHub</a>
-</nav>
-
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="vision.html">Vision</a>
+    <a href="features.html">Features</a>
+    <a href="https://github.com/david-TxRxSystems/openlogic" target="_blank">GitHub</a>
+  </nav>
+  <header>
+    <img src="assets/banner_vision.png" alt="Vision banner" />
+  </header>
   <main>
     <h1>Our Vision</h1>
-    <p><strong>OpenLogic</strong> is building the future of Smart Home programming — a modern, open, and transparent platform for professional integrators who want flexibility, power, and control.</p>
 
-    <p>We believe Smart Homes shouldn't be locked down by proprietary platforms. Integrators deserve tools that work for them, not against them. Tools that are readable, maintainable, portable, and adaptable. Tools that scale with the complexity of high-end homes without getting in the way.</p>
+    <section>
+      <h2>Why OpenLogic Exists</h2>
+      <p>Smart home platforms today are too often proprietary, rigid, and closed off. Integrators are locked into ecosystems that limit their creativity, slow down deployment, and prevent meaningful customization. OpenLogic exists to change that.</p>
+    </section>
 
-    <p>We are inspired by the best ideas from SIMPL+, but we’re pushing things further — with structured signals, clean syntax, modular architecture, and support for custom logic and user interfaces on any device.</p>
+    <section>
+      <h2>Who It's For</h2>
+      <p>We built OpenLogic for professional integrators, developers, and forward-thinking system designers. Whether you're moving on from SIMPL+ or looking to unify your smart home stack, OpenLogic provides a foundation you can truly build on.</p>
+    </section>
 
-    <p>This is more than a control system. It’s a movement toward <strong>open, programmable homes</strong> that empower integrators and delight clients.</p>
+    <section>
+      <h2>What We're Building</h2>
+      <p>At its core, OpenLogic is a signal-based logic engine — a powerful DSL, a runtime for executing logic, and a UI framework for designing professional interfaces. But it's also a platform for integrations, a protocol hub, and a bridge between legacy and modern control systems.</p>
+    </section>
+
+    <section>
+      <h2>The Future We're Working Toward</h2>
+      <p>We envision a world where integrators own their workflows. Where smart homes are programmable and composable. Where UI/UX is beautiful, flexible, and portable. And where the best ideas come not from a walled garden — but from the community.</p>
+    </section>
   </main>
 </body>
 </html>

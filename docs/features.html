@@ -2,65 +2,113 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>OpenLogic – Features for Integrators</title>
+  <title>OpenLogic – Features</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <style>
-  body {
-    font-family: 'Inter', sans-serif;
-    background-color: #121212;
-    color: #e0e0e0;
-    margin: 0;
-    padding: 0;
-  }
-  nav {
-    background: #1e1e1e;
-    padding: 1rem;
-    display: flex;
-    justify-content: center;
-    gap: 2rem;
-  }
-  nav a {
-    color: #e0e0e0;
-    text-decoration: none;
-    font-weight: bold;
-  }
-  nav a:hover {
-    text-decoration: underline;
-  }
-  main {
-    max-width: 800px;
-    margin: 2rem auto;
-    padding: 0 1rem;
-  }
-  h1 {
-    font-size: 2rem;
-    border-bottom: 1px solid #333;
-    padding-bottom: 0.5rem;
-  }
-</style>
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #121212;
+      color: #e0e0e0;
+      margin: 0;
+      padding: 0;
+    }
+    nav {
+      background: #1e1e1e;
+      padding: 1rem;
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+    }
+    nav a {
+      color: #e0e0e0;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    header {
+      width: 100%;
+      height: auto;
+      background-color: #121212;
+      text-align: center;
+    }
+    header img {
+      width: 800px;
+      height: 100px;
+      object-fit: cover;
+    }
+    main {
+      max-width: 800px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+    h1 {
+      font-size: 2rem;
+      border-bottom: 1px solid #333;
+      padding-bottom: 0.5rem;
+    }
+    section {
+      margin-bottom: 2rem;
+    }
+    section h2 {
+      font-size: 1.3rem;
+      color: #ffffff;
+      margin-bottom: 0.3rem;
+    }
+    section p {
+      font-size: 1rem;
+      color: #ccc;
+    }
+  </style>
 </head>
 <body>
-  
-<nav>
-  <a href="index.html">Home</a>
-  <a href="vision.html">Vision</a>
-  <a href="features.html">Features</a>
-  <a href="https://github.com/david-TxRxSystems/openlogic" target="_blank">GitHub</a>
-</nav>
-
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="vision.html">Vision</a>
+    <a href="features.html">Features</a>
+    <a href="https://github.com/david-TxRxSystems/openlogic" target="_blank">GitHub</a>
+  </nav>
+  <header>
+    <img src="assets/banner_features.png" alt="Features banner" />
+  </header>
   <main>
     <h1>Features for Professional Integrators</h1>
 
-    <ul>
-      <li><strong>🔧 Modular Architecture:</strong> Create reusable, structured logic modules with simple, declarative syntax.</li>
-      <li><strong>🧠 Clean Signal Logic:</strong> Inspired by Crestron’s SIMPL+ model — refined and modernized.</li>
-      <li><strong>🛠️ Built-In Logic Library:</strong> Complete collection of symbols (AND, NOT, Toggle, Interlock, etc.) ready to go.</li>
-      <li><strong>🖥️ Custom UI Designer:</strong> A browser-based visual UI tool is in the works for quick layout and control workflows.</li>
-      <li><strong>🌉 System Integration:</strong> Interface with Crestron Home, Home Assistant, Lutron, and more through bridge modules.</li>
-      <li><strong>⚙️ Open Runtime:</strong> Works in Docker, Linux, NUC, or Pi. Build locally, deploy anywhere.</li>
-      <li><strong>🚀 Built in Public:</strong> Developed openly on GitHub with a growing community of integrators and developers.</li>
-    </ul>
+    <section>
+      <h2>Modular Architecture</h2>
+      <p>Create reusable logic blocks and structured modules that scale across rooms, subsystems, and hardware platforms.</p>
+    </section>
 
-    <p>This is the integrator’s toolkit we’ve always wanted. Now we’re building it — together.</p>
+    <section>
+      <h2>Clean Signal Logic</h2>
+      <p>Inspired by SIMPL+ — refined for modern applications. Digital, analog, and serial signals are first-class citizens.</p>
+    </section>
+
+    <section>
+      <h2>Logic Symbol Library</h2>
+      <p>Drop-in building blocks like AND, TOGGLE, LATCH, TIMERS, COUNTERS, and more — already scaffolded and ready to use.</p>
+    </section>
+
+    <section>
+      <h2>Custom UI Designer</h2>
+      <p>A browser-based layout engine is coming. Drag and drop buttons, sliders, labels — and bind them directly to logic signals.</p>
+    </section>
+
+    <section>
+      <h2>System Integration</h2>
+      <p>Built-in bridges to Home Assistant, Crestron Home, Lutron, Dynalite, and more. Extend or replace legacy control with ease.</p>
+    </section>
+
+    <section>
+      <h2>Portable Runtime</h2>
+      <p>Runs in Docker or Linux. Deploy to a NUC, VM, or Pi. Low overhead, maximum flexibility.</p>
+    </section>
+
+    <section>
+      <h2>Built in Public</h2>
+      <p>Transparent roadmap, open GitHub repo, and a growing community of professionals contributing real-world insight.</p>
+    </section>
   </main>
 </body>
 </html>
