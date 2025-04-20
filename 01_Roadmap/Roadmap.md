@@ -1,101 +1,49 @@
-# 🛣️ OpenLogic Project Roadmap
+# 📍 OpenLogic Roadmap (Updated 2025-04-20)
 
-_Last updated: April 2025_
+## ✅ Completed Milestones
 
-This roadmap tracks all major milestones, modules, and integrations planned or completed for the OpenLogic Smart Home OS.
+- DSL syntax defined with signal grouping and event blocks
+- Runtime signal model (core concept)
+- Obsidian vault and GitHub project structure
+- Visual + text-based Obsidian notes auto-synced with roadmap
+- Todoist integration with cron-based sync
+- Landing page with banners, dark mode, branding
+- Mastodon automation and Discord community scaffolded
+- Core modules scaffolded:
+  - Room, AudioZone, HVACZone, UI_Module
+- Logic symbol library rebuild in progress (SIMPL+ inspired)
+- Crestron Home bridge scaffolded
+- Media server integration scaffolded: Plex, Emby, Jellyfin
+- HVAC integration bridges: BACnet, Modbus, Nest, CoolMasterNet, etc.
+- AV bridge split: `/15_Audio_Bridges/` and `/16_Video_Bridges/`
+- Spotify integration scaffolded for Spotify Connect
 
----
+## 🚧 Current Focus
 
-## ✅ Core Foundations
+- Begin implementing logic inside all core modules
+- Connect bridges to Room/Zone modules
+- Define reusable logic utilities (VolumeFade, SceneRecall, etc.)
+- Wire up example `main.dsl` for simulation/testing
+- Document bridge APIs and signal wiring strategies
 
-- [x] Project vision and goals documented
-- [x] GitHub repository initialized
-- [x] Markdown structure for Obsidian
-- [x] DSL syntax specification (signals, events, routing)
-- [x] Visual programming goals outlined
-- [x] Git, Todoist, and Morgen integration
+## 🛠 Next Milestones
 
----
+- Develop UI control logic for scene editing and ramp timing
+- Create `LightingKeypad.dsl` and connect to Lighting$ bus
+- Add signal routing and event triggers for logic flow
+- Refine DSL interpreter/parser (AST model)
+- Build internal test harness
 
-## ✅ Core Modules
+## 🌐 Planned Integrations
 
-- [x] Room Module
-- [x] Audio Module
-- [x] UI Module
-- [x] HVAC Module
-- [x] Lighting Circuit Module
-- [x] Lighting Keypad Module
-- [x] Scene Editor + JSON persistence
-- [x] Signal modifiers and routing system
+- Expand media controls (Roon? Apple Music? Community-driven)
+- Video-over-IP bridges: JustAddPower, Wyrestorm, NVX
+- Support for advanced network audio (Dante/AES67 optional)
+- Build simple test UIs (CLI or browser view of signal states)
 
----
+## 🎯 MVP Goals
 
-## ✅ Logic Symbol Library
-
-- [x] Boolean Logic (AND, OR, NOT, etc.)
-- [x] Timers (OneShot, Retriggerable, Oscillator)
-- [x] Counters (Binary, UpDown, Ring)
-- [x] Analog Processing (Sum, Compare, Scale, Limit)
-- [x] Signal Routing (Selectors, Crosspoints)
-- [x] Logic Module Catalog
-
----
-
-## ✅ Lighting System Bridges
-
-| System          | Modules                                    | Status |
-|-----------------|---------------------------------------------|--------|
-| Lutron HWQS     | Bridge, Dimmer, Keypad, API Docs            | ✅ Done |
-| Dynalite        | Bridge, Dimmer, Keypad, Preset Mode         | ✅ Done |
-| Generic Lighting| Scene logic, JSON storage, manual ramping   | ✅ Done |
-
----
-
-## ✅ Control System Bridges
-
-| System          | Modules                                    | Status |
-|-----------------|---------------------------------------------|--------|
-| Crestron Home   | Bridge scaffold + API docs                  | ✅ Done |
-| Control4        | Bridge scaffold + API docs                  | ✅ Done |
-| Savant          | Not started                                 | 🔲 Planned |
-
----
-
-## 🧩 Integration Platform Support
-
-- [x] Home Assistant bridge planned
-- [x] Web UI with scene editing (partially prototyped)
-- [ ] MQTT or WebSocket runtime engine
-- [ ] Python interpreter backend
-- [ ] Main `main.dsl` wiring template
-
----
-
-## 🧠 MVP Milestones
-
-- [x] Define MVP feature set
-- [x] MVP checklist and Todoist sync
-- [ ] Complete `main.dsl` test config
-- [ ] Launch preview of first working logic loop
-
----
-
-## 🌍 Outreach and Community
-
-- [x] Landing page (GitHub Pages)
-- [x] Custom branding, logo, banners
-- [x] Mastodon setup + automated posts
-- [x] Discord server + onboarding posts
-- [ ] Bot for dev updates
-- [ ] Docs site and CLI installer
-
----
-
-## 🧰 Next Steps
-
-- [ ] Finish lighting runtime wiring
-- [ ] Begin test runtime interpreter (simulator)
-- [ ] Finish Home Assistant bridge
-- [ ] UI module feedback rendering
-- [ ] Visual logic editor proof-of-concept
-
+- Room + Audio + Lighting fully functional
+- UI editing and feedback in place
+- One-touch scene editing + saving
+- Run + simulate with a minimal test runtime
