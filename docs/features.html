@@ -2,8 +2,9 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>OpenLogic – Features</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>OpenLogic — Features</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap">
   <style>
     body {
       font-family: 'Inter', sans-serif;
@@ -13,8 +14,8 @@
       padding: 0;
     }
     nav {
-      background: #1e1e1e;
-      padding: 1rem;
+      background: #1a1a1a;
+      padding: 0.75rem;
       display: flex;
       justify-content: center;
       gap: 2rem;
@@ -22,93 +23,90 @@
     nav a {
       color: #e0e0e0;
       text-decoration: none;
-      font-weight: bold;
+      font-weight: 500;
     }
     nav a:hover {
-      text-decoration: underline;
+      color: #1a73e8;
     }
     header {
       width: 100%;
-      height: auto;
-      background-color: #121212;
+      height: 400px;
+      background: url('assets/banner_features.png') no-repeat center center;
+      background-size: cover;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
       text-align: center;
     }
-    header img {
-      width: 800px;
-      height: 100px;
-      object-fit: cover;
+    header h1 {
+      font-size: 2.5rem;
+      color: #fff;
+      background: rgba(0, 0, 0, 0.5);
+      padding: 0.5rem 1rem;
+      border-radius: 6px;
     }
     main {
       max-width: 800px;
       margin: 2rem auto;
       padding: 0 1rem;
     }
-    h1 {
-      font-size: 2rem;
-      border-bottom: 1px solid #333;
-      padding-bottom: 0.5rem;
+    .feature-box {
+      background: #1e1e1e;
+      padding: 2rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.5);
     }
-    section {
-      margin-bottom: 2rem;
-    }
-    section h2 {
-      font-size: 1.3rem;
+    .feature-box h2 {
+      font-size: 1.4rem;
       color: #ffffff;
-      margin-bottom: 0.3rem;
+      margin-top: 0;
     }
-    section p {
+    .feature-box p {
       font-size: 1rem;
       color: #ccc;
+      line-height: 1.6;
+    }
+    footer {
+      text-align: center;
+      padding: 2rem;
+      font-size: 0.875rem;
+      color: #888;
+    }
+    a {
+      color: #1a73e8;
+      text-decoration: none;
     }
   </style>
 </head>
 <body>
+
   <nav>
     <a href="index.html">Home</a>
     <a href="vision.html">Vision</a>
     <a href="features.html">Features</a>
-    <a href="https://github.com/david-TxRxSystems/openlogic" target="_blank">GitHub</a>
   </nav>
+
   <header>
-    <img src="assets/banner_features.png" alt="Features banner" />
-  </header>
-  <main>
     <h1>Features for Professional Integrators</h1>
+  </header>
 
-    <section>
+  <main>
+    <div class="feature-box">
       <h2>Modular Architecture</h2>
-      <p>Create reusable logic blocks and structured modules that scale across rooms, subsystems, and hardware platforms.</p>
-    </section>
+      <p>Build your system using reusable modules, clean logic blocks, and structured signals. Scale from a single room to a full property with clarity and consistency.</p>
+    </div>
 
-    <section>
+    <div class="feature-box">
       <h2>Clean Signal Logic</h2>
-      <p>Inspired by SIMPL+ — refined for modern applications. Digital, analog, and serial signals are first-class citizens.</p>
-    </section>
+      <p>Inspired by SIMPL+ but modernized for today's platforms. Digital, analog, and serial signals are natively supported and easy to reason about.</p>
+    </div>
 
-    <section>
+    <div class="feature-box">
       <h2>Logic Symbol Library</h2>
-      <p>Drop-in building blocks like AND, TOGGLE, LATCH, TIMERS, COUNTERS, and more — already scaffolded and ready to use.</p>
-    </section>
+      <p>A growing library of functional blocks — AND, TOGGLE, LATCH, TIMERS, COUNTERS — that can be dropped in and wired like SIMPL Windows. No boilerplate. Just logic.</p>
+    </div>
 
-    <section>
+    <div class="feature-box">
       <h2>Custom UI Designer</h2>
-      <p>A browser-based layout engine is coming. Drag and drop buttons, sliders, labels — and bind them directly to logic signals.</p>
-    </section>
-
-    <section>
-      <h2>System Integration</h2>
-      <p>Built-in bridges to Home Assistant, Crestron Home, Lutron, Dynalite, and more. Extend or replace legacy control with ease.</p>
-    </section>
-
-    <section>
-      <h2>Portable Runtime</h2>
-      <p>Runs in Docker or Linux. Deploy to a NUC, VM, or Pi. Low overhead, maximum flexibility.</p>
-    </section>
-
-    <section>
-      <h2>Built in Public</h2>
-      <p>Transparent roadmap, open GitHub repo, and a growing community of professionals contributing real-world insight.</p>
-    </section>
-  </main>
-</body>
-</html>
+      <p>A browser-based drag-and-drop editor is in the works. Build rich touch interfaces and bind signals directly to your logic
