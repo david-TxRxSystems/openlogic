@@ -2,94 +2,99 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>OpenLogic – Vision</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>OpenLogic — Vision</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap">
   <style>
     body {
       font-family: 'Inter', sans-serif;
-      background-color: #121212;
-      color: #e0e0e0;
       margin: 0;
       padding: 0;
-    }
-    nav {
-      background: #1e1e1e;
-      padding: 1rem;
-      display: flex;
-      justify-content: center;
-      gap: 2rem;
-    }
-    nav a {
+      background: #121212;
       color: #e0e0e0;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    nav a:hover {
-      text-decoration: underline;
     }
     header {
+      position: relative;
       width: 100%;
-      height: auto;
-      background-color: #121212;
+      height: 400px;
+      background: url('assets/banner_vision.png') no-repeat center center;
+      background-size: cover;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      color: #fff;
       text-align: center;
     }
-    header img {
-      width: 800px;
-      height: 100px;
-      object-fit: cover;
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+      background: rgba(0, 0, 0, 0.5);
+      padding: 0.5rem 1rem;
+      border-radius: 6px;
+    }
+    header p {
+      font-size: 1.2rem;
+      color: #ddd;
+      background: rgba(0, 0, 0, 0.4);
+      padding: 0.4rem 1rem;
+      border-radius: 6px;
     }
     main {
       max-width: 800px;
       margin: 2rem auto;
       padding: 0 1rem;
     }
-    h1 {
-      font-size: 2rem;
-      border-bottom: 1px solid #333;
-      padding-bottom: 0.5rem;
-    }
-    section {
-      margin-bottom: 2rem;
-    }
-    section h2 {
-      font-size: 1.5rem;
+    h2 {
       color: #ffffff;
+      font-size: 1.8rem;
+      margin-top: 2rem;
+    }
+    p {
+      line-height: 1.6;
+      color: #ccc;
+    }
+    ul {
+      list-style: square;
+      padding-left: 1.5rem;
+    }
+    ul li {
       margin-bottom: 0.5rem;
+    }
+    footer {
+      text-align: center;
+      padding: 2rem;
+      font-size: 0.875rem;
+      color: #888;
+    }
+    a {
+      color: #1a73e8;
+      text-decoration: none;
     }
   </style>
 </head>
 <body>
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="vision.html">Vision</a>
-    <a href="features.html">Features</a>
-    <a href="https://github.com/david-TxRxSystems/openlogic" target="_blank">GitHub</a>
-  </nav>
   <header>
-    <img src="assets/banner_vision.png" alt="Vision banner" />
+    <h1>Our Vision</h1>
+    <p>Redefining professional smart home control</p>
   </header>
   <main>
-    <h1>Our Vision</h1>
-
-    <section>
-      <h2>Why OpenLogic Exists</h2>
-      <p>Smart home platforms today are too often proprietary, rigid, and closed off. Integrators are locked into ecosystems that limit their creativity, slow down deployment, and prevent meaningful customization. OpenLogic exists to change that.</p>
-    </section>
-
-    <section>
-      <h2>Who It's For</h2>
-      <p>We built OpenLogic for professional integrators, developers, and forward-thinking system designers. Whether you're moving on from SIMPL+ or looking to unify your smart home stack, OpenLogic provides a foundation you can truly build on.</p>
-    </section>
-
-    <section>
-      <h2>What We're Building</h2>
-      <p>At its core, OpenLogic is a signal-based logic engine — a powerful DSL, a runtime for executing logic, and a UI framework for designing professional interfaces. But it's also a platform for integrations, a protocol hub, and a bridge between legacy and modern control systems.</p>
-    </section>
-
-    <section>
-      <h2>The Future We're Working Toward</h2>
-      <p>We envision a world where integrators own their workflows. Where smart homes are programmable and composable. Where UI/UX is beautiful, flexible, and portable. And where the best ideas come not from a walled garden — but from the community.</p>
-    </section>
+    <h2>🔭 Our Vision</h2>
+    <p><strong>OpenLogic</strong> exists for the professionals who demand more from their smart home systems.</p>
+    <p>In a world of closed platforms and “click-and-go” simplicity, we’re reclaiming what made home automation powerful in the first place:<br><strong>Control. Customization. Creativity.</strong></p>
+    <p>Built for experienced integrators, OpenLogic provides an open, modular, and fully programmable environment — without compromise.</p>
+    <p>Whether you're transitioning from Crestron, or starting fresh, OpenLogic gives you the tools to:</p>
+    <ul>
+      <li>Design your own logic</li>
+      <li>Build bespoke UIs</li>
+      <li>Integrate freely with best-in-class platforms</li>
+      <li>And finally, own your control system</li>
+    </ul>
+    <p>We’re not just building software.<br>
+    We’re building a new standard for professional-grade smart home automation — open by default, and engineered for flexibility.</p>
   </main>
+  <footer>
+    &copy; 2024 TxRxSystems · <a href="https://mastodon.social/@txrx">@txrxsystems</a> · <a href="https://openlogic.dev">OpenLogic.dev</a>
+  </footer>
 </body>
 </html>
