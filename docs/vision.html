@@ -13,6 +13,21 @@
       background: #121212;
       color: #e0e0e0;
     }
+    nav {
+      display: flex;
+      justify-content: center;
+      background: #1a1a1a;
+      padding: 0.75rem;
+    }
+    nav a {
+      color: #e0e0e0;
+      text-decoration: none;
+      margin: 0 1rem;
+      font-weight: 500;
+    }
+    nav a:hover {
+      color: #1a73e8;
+    }
     header {
       position: relative;
       width: 100%;
@@ -45,10 +60,16 @@
       margin: 2rem auto;
       padding: 0 1rem;
     }
+    .feature-box {
+      background: #1e1e1e;
+      padding: 2rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.5);
+    }
     h2 {
       color: #ffffff;
       font-size: 1.8rem;
-      margin-top: 2rem;
+      margin-top: 0;
     }
     p {
       line-height: 1.6;
@@ -74,25 +95,38 @@
   </style>
 </head>
 <body>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="vision.html">Vision</a>
+    <a href="https://github.com/david-TxRxSystems/openlogic" target="_blank">GitHub</a>
+    <a href="https://discord.gg/openlogic" target="_blank">Discord</a>
+    <a href="https://mastodon.social/@txrx" target="_blank">Mastodon</a>
+  </nav>
+
   <header>
     <h1>Our Vision</h1>
     <p>Redefining professional smart home control</p>
   </header>
+
   <main>
-    <h2>🔭 Our Vision</h2>
-    <p><strong>OpenLogic</strong> exists for the professionals who demand more from their smart home systems.</p>
-    <p>In a world of closed platforms and “click-and-go” simplicity, we’re reclaiming what made home automation powerful in the first place:<br><strong>Control. Customization. Creativity.</strong></p>
-    <p>Built for experienced integrators, OpenLogic provides an open, modular, and fully programmable environment — without compromise.</p>
-    <p>Whether you're transitioning from Crestron, or starting fresh, OpenLogic gives you the tools to:</p>
-    <ul>
-      <li>Design your own logic</li>
-      <li>Build bespoke UIs</li>
-      <li>Integrate freely with best-in-class platforms</li>
-      <li>And finally, own your control system</li>
-    </ul>
-    <p>We’re not just building software.<br>
-    We’re building a new standard for professional-grade smart home automation — open by default, and engineered for flexibility.</p>
+    <div class="feature-box">
+      <h2>🔭 Our Vision</h2>
+      <p><strong>OpenLogic</strong> exists for the professionals who demand more from their smart home systems.</p>
+      <p>In a world of closed platforms and “click-and-go” simplicity, we’re reclaiming what made home automation powerful in the first place:<br><strong>Control. Customization. Creativity.</strong></p>
+      <p>Built for experienced integrators, OpenLogic provides an open, modular, and fully programmable environment — without compromise.</p>
+      <p>Whether you're transitioning from Crestron, or starting fresh, OpenLogic gives you the tools to:</p>
+      <ul>
+        <li>Design your own logic</li>
+        <li>Build bespoke UIs</li>
+        <li>Integrate freely with best-in-class platforms</li>
+        <li>And finally, own your control system</li>
+      </ul>
+      <p>We’re not just building software.<br>
+      We’re building a new standard for professional-grade smart home automation — open by default, and engineered for flexibility.</p>
+    </div>
   </main>
+
   <footer>
     &copy; 2024 TxRxSystems · <a href="https://mastodon.social/@txrx">@txrxsystems</a> · <a href="https://openlogic.dev">OpenLogic.dev</a>
   </footer>
