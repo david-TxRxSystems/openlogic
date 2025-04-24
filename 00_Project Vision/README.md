@@ -16,3 +16,4 @@ OpenLogic is a professional-grade, open Smart Home operating system that replace
 - Seamlessly integrate with Home Assistant for device I/O
 - Offer a native UI design and runtime system
 - Support a full logic and signal architecture
+
